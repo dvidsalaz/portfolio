@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Newsreader } from "next/font/google";
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./styles/globals.css";
@@ -16,7 +15,6 @@ const geistMono = localFont({
 });
 
 const opensans = Open_Sans({ subsets: ["latin"] });
-const newsreader = Newsreader({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "David Agustin Salazar | Portfolio",
