@@ -11,6 +11,7 @@ export default {
     extend: {
       colors: {
         bronzeOrange: "#262320",
+        quartzWhite: "#F8F8F8",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
