@@ -12,6 +12,8 @@ export default {
       colors: {
         bronzeOrange: "#262320",
         quartzWhite: "#F8F8F8",
+        wayneBlack: "#111111",
+        modernGray: "#313335",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
