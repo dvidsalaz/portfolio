@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import tailwindcssMotion from "tailwindcss-motion";
+import tailwindcssIntersect from "tailwindcss-intersect";
 
 export default {
   darkMode: ["class"],
@@ -62,5 +64,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssMotion, tailwindcssIntersect],
 } satisfies Config;
