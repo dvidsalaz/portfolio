@@ -114,7 +114,12 @@ export default function Home() {
                     matrices, and decomposes total risk into systematic vs.
                     idiosyncratic components using CAPM-based logic.
                   </p>
-                  <p className="mt-2 underline cursor-pointer">View More</p>
+                  <Link
+                    className="mt-2 underline cursor-pointer"
+                    href="/risk-engine"
+                  >
+                    View More
+                  </Link>
                 </div>
               </div>
             </div>
