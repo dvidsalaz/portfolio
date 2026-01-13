@@ -16,6 +16,7 @@ export default {
         quartzWhite: "#F8F8F8",
         wayneBlack: "#111111",
         modernGray: "#313335",
+        modernBlack: "#161616",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

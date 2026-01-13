@@ -1,3 +1,8 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import { CodeBlock } from "@/components/ui/CodeBlock";
+import { Math } from "@/components/math";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
@@ -28,7 +33,7 @@ export default function Home() {
                 Projects
               </Link>
               <Link
-                href="/"
+                href="/about"
                 className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
               >
                 About
@@ -43,28 +48,25 @@ export default function Home() {
           </nav>
           <Separator className=" bg-modernGray "></Separator>
           <div className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-20 min-h-screen ">
-            <div className=" flex flex-col gap-3">
-              <h3 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-xl text-white">
-                Portfolio Risk Engine
-              </h3>
-              <p className=" text- text-neutral-300 motion-opacity-in-0 motion-translate-y-in-100 motion-delay-100 motion-blur-in-md">
-                python | pandas | numPy
-              </p>
-            </div>
-            <div className=" flex flex-col gap-3">
-              <h1 className=" text-white text-xl">1. Introduction</h1>
-              <p>
-                The purpose of this notebook is to review and illustrate the
-                standard Brownian motion and some of its main properties.
-              </p>
-              <figure>test</figure>
-            </div>
+            <h1 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-xl text-white">
+              Hi, I&apos;m David. I&apos;m a finance & data analytics student.
+            </h1>
+            <CodeBlock
+              lang="tsx"
+              title="HTML"
+              code={`<div className="bg-background text-foreground" />`}
+            />
+            <p className="">
+              The Sharpe Ratio is defined as{" "}
+              <Math latex="\frac{\mathbb{E}[R_p - R_f]}{\sigma(R_p - R_f)}" />{" "}
+              and measures excess return per unit of risk.
+            </p>
           </div>
         </section>
         <Separator className=" bg-modernGray"></Separator>
         <footer className=" lg:px-32 flex flex-col md:flex-row gap-8 bg-bronzeOrange p-6 sm:p-10 lg:p-20 items-center text-center ">
           <div className=" flex flex-col md:flex-row items-center gap-8 justify-between w-full text-sm">
-            <nav className=" test text-white flex gap-4 items-center ">
+            <nav className="text-white flex gap-4 items-center ">
               <Link
                 className=" hover:text-gray-300 hover:underline"
                 href="mailto:das240008@utdallas.edu"
