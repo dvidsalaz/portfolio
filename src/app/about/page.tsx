@@ -100,7 +100,9 @@ export default function Home() {
                   </span>{" "}
                   &mdash; seeing them live was my first concert experience. My
                   favorite song is{" "}
-                  <span className=" italic ">"We Are the People."</span>
+                  <span className=" italic ">
+                    &quot;We Are The People.&quot;
+                  </span>
                 </li>
                 <li>
                   I went{" "}
@@ -110,9 +112,9 @@ export default function Home() {
                 </li>
                 <li>
                   <span className=" text-white font-medium">Aviation</span>{" "}
-                  &mdash; I plan to earn my pilot's license after I graduate
-                  from college. In Spring 2025, I took my first discovery
-                  flight.
+                  &mdash; I plan to earn my pilot&apos;s license after I
+                  graduate from college. In Spring 2025, I took my first
+                  discovery flight.
                 </li>
                 <li>
                   I tend to perform best in uncomfortable scenarios, where deep
