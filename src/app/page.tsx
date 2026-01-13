@@ -28,7 +28,7 @@ export default function Home() {
                 Projects
               </Link>
               <Link
-                href="/"
+                href="/about"
                 className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
               >
                 About

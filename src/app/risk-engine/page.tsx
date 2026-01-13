@@ -47,7 +47,7 @@ export default function Home() {
               <h3 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-xl text-white">
                 Portfolio Risk Engine
               </h3>
-              <p className=" text-neutral-300 motion-opacity-in-0 motion-translate-y-in-100 motion-delay-100 motion-blur-in-md">
+              <p className=" text- text-neutral-300 motion-opacity-in-0 motion-translate-y-in-100 motion-delay-100 motion-blur-in-md">
                 python | pandas | numPy
               </p>
             </div>
@@ -57,13 +57,14 @@ export default function Home() {
                 The purpose of this notebook is to review and illustrate the
                 standard Brownian motion and some of its main properties.
               </p>
+              <figure>test</figure>
             </div>
           </div>
         </section>
         <Separator className=" bg-modernGray"></Separator>
         <footer className=" lg:px-32 flex flex-col md:flex-row gap-8 bg-bronzeOrange p-6 sm:p-10 lg:p-20 items-center text-center ">
           <div className=" flex flex-col md:flex-row items-center gap-8 justify-between w-full text-sm">
-            <nav className="text-white flex gap-4 items-center ">
+            <nav className=" test text-white flex gap-4 items-center ">
               <Link
                 className=" hover:text-gray-300 hover:underline"
                 href="mailto:das240008@utdallas.edu"
