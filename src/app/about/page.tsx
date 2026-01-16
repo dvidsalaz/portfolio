@@ -13,7 +13,7 @@ export default function Home() {
       <ScrollObserver>
         <section
           id="home"
-          className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 lg:px-52 bg-wayneBlack min-h-screen text-neutral-200 text-base sm:text-lg leading-relaxed antialiased "
+          className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 lg:px-32 bg-wayneBlack min-h-screen text-neutral-200 text-base sm:text-lg leading-relaxed antialiased "
         >
           <MyNavigation></MyNavigation>
           <Separator className=" bg-modernGray "></Separator>
