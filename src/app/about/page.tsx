@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import ScrollObserver from "@/components/ui/scrollObserver";
 import { CarouselPlugin } from "@/components/custom/CarouselPlugin";
 import { CarouselContent } from "@/components/ui/carousel";
+import MyNavigation from "@/components/custom/customNavigation";
 
 export default function Home() {
   return (
@@ -12,41 +13,13 @@ export default function Home() {
       <ScrollObserver>
         <section
           id="home"
-          className="  flex flex-col gap-8 p-6 sm:p-10 lg:p-20 lg:px-52 bg-wayneBlack min-h-screen text-neutral-200 text-base sm:text-lg leading-relaxed antialiased "
+          className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 lg:px-52 bg-wayneBlack min-h-screen text-neutral-200 text-base sm:text-lg leading-relaxed antialiased "
         >
-          <nav className=" flex items-center justify-between">
-            <Link href="/"></Link>
-            <div className="text-white hidden sm:flex gap-6">
-              <Link
-                href="/"
-                className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
-              >
-                Home
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
-              >
-                Projects
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
-              >
-                About
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
-              >
-                Contact
-              </Link>
-            </div>
-          </nav>
+          <MyNavigation></MyNavigation>
           <Separator className=" bg-modernGray "></Separator>
           <div className=" flex flex-col gap-6 p-6 sm:p-10 lg:p-20 min-h-screen ">
-            <div className=" flex flex-col gap-3">
-              <h1 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-4xl text-white">
+            <div className=" flex flex-col">
+              <h1 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-3xl text-white">
                 Hi.
               </h1>
             </div>
@@ -117,8 +90,10 @@ export default function Home() {
                   discovery flight.
                 </li>
                 <li>
-                  I tend to perform best in uncomfortable scenarios, where deep
-                  focus, adaptation, and decision-making are most crucial.
+                  <span className=" text-white font-medium">Free time</span>{" "}
+                  {""}
+                  &mdash; On my free time I enjoy cooking, staying physically
+                  active, and doing front-end development work.
                 </li>
                 <li>
                   <span className=" text-white font-medium">Rock Climbing</span>{" "}
@@ -131,6 +106,12 @@ export default function Home() {
             <div>
               <CarouselPlugin></CarouselPlugin>
             </div>
+            <p>
+              view my projects{" "}
+              <span className=" underline hover:text-orange-300 cursor-pointer">
+                <Link href="/projects">here</Link>
+              </span>
+            </p>
           </div>
         </section>
         <Separator className=" bg-modernGray"></Separator>

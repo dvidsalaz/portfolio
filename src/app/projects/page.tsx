@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import ScrollObserver from "@/components/ui/scrollObserver";
+import MyNavigation from "@/components/custom/customNavigation";
 
 export default function Home() {
   return (
@@ -17,35 +18,7 @@ export default function Home() {
           id="home"
           className="  flex flex-col gap-8 p-6 sm:p-10 lg:p-20 lg:px-32 bg-wayneBlack min-h-screen "
         >
-          <nav className=" flex items-center justify-between">
-            <Link href="/"></Link>
-            <div className="text-white hidden sm:flex gap-6">
-              <Link
-                href="/"
-                className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
-              >
-                Home
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
-              >
-                Projects
-              </Link>
-              <Link
-                href="/about"
-                className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
-              >
-                About
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-gray-300 hover:underline text-sm hover:text-SunsetOrange"
-              >
-                Contact
-              </Link>
-            </div>
-          </nav>
+          <MyNavigation></MyNavigation>
           <Separator className=" bg-modernGray "></Separator>
           <div className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-20 min-h-screen ">
             <h1 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-xl text-white">
