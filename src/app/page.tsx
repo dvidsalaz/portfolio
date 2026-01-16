@@ -78,7 +78,7 @@ export default function Home() {
                   <p className=" uppercase tracking-wide text-neutral-400">
                     Projects
                   </p>
-                  <p className="font-medium">Portfolio Risk Engine</p>
+                  <p className="font-medium"></p>
                   <p className="text-neutral-300">
                     A Python-based portfolio analytics engine that computes
                     expected return, variance, standard deviation, covariance
