@@ -67,8 +67,7 @@ export default function Home() {
                   <p className="text-neutral-300">
                     A Python-based portfolio analytics engine that computes
                     expected return, variance, standard deviation, covariance
-                    matrices, and decomposes total risk into systematic vs.
-                    idiosyncratic components using CAPM-based logic.
+                    matrices.
                   </p>
                   <p className="mt-2 underline cursor-pointer">View More</p>
                 </div>
@@ -96,8 +95,7 @@ export default function Home() {
                   <p className="text-neutral-300">
                     A Python-based portfolio analytics engine that computes
                     expected return, variance, standard deviation, covariance
-                    matrices, and decomposes total risk into systematic vs.
-                    idiosyncratic components using CAPM-based logic.
+                    matrices.
                   </p>
                   <Link
                     className="mt-2 underline cursor-pointer"
