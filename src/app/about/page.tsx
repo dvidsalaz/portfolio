@@ -5,6 +5,7 @@ import ScrollObserver from "@/components/ui/scrollObserver";
 import { CarouselPlugin } from "@/components/custom/CarouselPlugin";
 import { CarouselContent } from "@/components/ui/carousel";
 import MyNavigation from "@/components/custom/customNavigation";
+import { MyFooter } from "@/components/custom/customFooter";
 
 export default function Home() {
   return (
@@ -107,7 +108,7 @@ export default function Home() {
               <CarouselPlugin></CarouselPlugin>
             </div>
             <p>
-              view my projects{" "}
+              view my projects
               <span className=" underline hover:text-orange-300 cursor-pointer">
                 <Link href="/projects">here</Link>
               </span>
@@ -115,39 +116,7 @@ export default function Home() {
           </div>
         </section>
         <Separator className=" bg-modernGray"></Separator>
-        <footer className=" lg:px-32 flex flex-col md:flex-row gap-8 bg-bronzeOrange p-6 sm:p-10 lg:p-20 items-center text-center ">
-          <div className=" flex flex-col md:flex-row items-center gap-8 justify-between w-full text-sm">
-            <nav className="text-white flex gap-4 items-center ">
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="mailto:das240008@utdallas.edu"
-              >
-                Email
-              </Link>
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="https://www.linkedin.com/in/dvidsalaz/"
-              >
-                LinkedIn
-              </Link>
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="https://github.com/dvidsalaz"
-              >
-                Github
-              </Link>
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="/resume"
-              >
-                Resume
-              </Link>
-            </nav>
-            <div>
-              <p className="text-white text-sm">&copy; 2025 David Salazar</p>
-            </div>
-          </div>
-        </footer>
+        <MyFooter></MyFooter>
       </ScrollObserver>
     </main>
   );

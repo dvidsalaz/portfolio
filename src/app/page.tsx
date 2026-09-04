@@ -46,18 +46,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex-1 flex flex-col md:flex-row gap-6 ">
+          <div className="flex-1 flex flex-col md:flex-row gap-6 items-stretch ">
             <div
               id="card"
-              className=" rounded-t-3xl p-3 sm:p-4 lg:p-8 flex flex-col bg-wayneBlack text-white intersect-once intersect:motion-preset-slide-up motion-delay-100  "
+              className=" rounded-t-3xl p-3 sm:p-4 lg:p-8 flex flex-col bg-wayneBlack text-white intersect-once intersect:motion-preset-slide-up motion-delay-100 flex-1  "
             >
-              <div className=" flex flex-col gap-5">
-                <div className=" relative w-full h-96 overflow-hidden">
+              <div className=" flex flex-col gap-5 h-full">
+                <div className=" relative w-full h-96 overflow-hidden shrink-0">
                   <Image
                     src="/images/egypt3.jpg"
-                    alt="A flexible image"
-                    layout="fill"
-                    objectFit="cover"
+                    alt="Placeholder for upcoming project"
+                    fill
+                    className=" object-cover opacity-60"
                   />
                 </div>
 
@@ -65,27 +65,28 @@ export default function Home() {
                   <p className=" uppercase tracking-wide text-neutral-400">
                     Projects
                   </p>
-                  <p className="font-medium">Portfolio Risk Engine</p>
+                  <p className="font-medium">Fixed Income & Credit Analysis</p>
                   <p className="text-neutral-300">
-                    A Python-based portfolio analytics engine that computes
-                    expected return, variance, standard deviation, covariance
-                    matrices.
+                    Duration, key rate duration, and credit spread modeling —
+                    coming soon.
                   </p>
-                  <p className="mt-2 underline cursor-pointer">View More</p>
+                  <p className="mt-2 text-neutral-500 italic cursor-default">
+                    In progress
+                  </p>
                 </div>
               </div>
             </div>
             <div
               id="card"
-              className=" rounded-t-3xl p-3 sm:p-4 lg:p-8 flex flex-col bg-wayneBlack text-white intersect-once intersect:motion-preset-slide-up motion-delay-200  "
+              className=" rounded-t-3xl p-3 sm:p-4 lg:p-8 flex flex-col bg-wayneBlack text-white intersect-once intersect:motion-preset-slide-up motion-delay-100 flex-1  "
             >
-              <div className=" flex flex-col gap-5">
-                <div className=" relative w-full h-96 overflow-hidden">
+              <div className=" flex flex-col gap-5 h-full">
+                <div className=" relative w-full h-96 overflow-hidden shrink-0">
                   <Image
                     src="/images/egypt2.jpg"
                     alt="A flexible image"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    className=" object-cover"
                   />
                 </div>
 

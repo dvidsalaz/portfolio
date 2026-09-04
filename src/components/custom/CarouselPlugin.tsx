@@ -24,18 +24,15 @@ import {
 import Image from "next/image";
 
 const logos = [
-  { src: "/images/IMG_0332.jpg", name: "Me" },
-  { src: "/images/IMG_9250.jpg", name: "Yo" },
-  { src: "/images/IMG_9880.jpg", name: "Ye" },
-  { src: "/images/image0.jpg", name: "Atlas" },
-  { src: "/images/GAF_Logo.svg", name: "GAF" },
-  { src: "/images/TAMKO_Logo.svg", name: "TAMKO" },
-  { src: "/images/IKO_Logo.svg", name: "IKO" },
+  { src: "/images/IMG_0332.jpg", name: "Me", orientation: "portrait" },
+  { src: "/images/IMG_9250.jpg", name: "Yo", orientation: "landscape" },
+  { src: "/images/IMG_9880.jpg", name: "Ye", orientation: "landscape" },
+  { src: "/images/image0.jpg", name: "Atlas", orientation: "landscape" },
 ];
 
 export function CarouselPlugin() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false })
+    Autoplay({ delay: 2000, stopOnInteraction: false }),
   );
 
   return (
@@ -47,7 +44,7 @@ export function CarouselPlugin() {
               <Dialog>
                 {/* Trigger should be the clickable card */}
                 <DialogTrigger asChild>
-                  <Card className="cursor-pointer">
+                  <Card className="cursor-pointer border-none">
                     <CardContent className="relative flex aspect-square items-center justify-center p-6">
                       <Image
                         src={logo.src}
@@ -63,8 +60,14 @@ export function CarouselPlugin() {
 
                 {/* Content must be a sibling, not inside trigger */}
                 <DialogContent className="sm:max-w-4xl p-0">
-                  <DialogTitle>test</DialogTitle>
-                  <div className=" aspect-[16/9] w-full overflow-hidden">
+                  <DialogTitle>{logo.name}</DialogTitle>
+                  <div
+                    className={`w-full overflow-hidden ${
+                      logo.orientation === "portrait"
+                        ? "aspect-[3/4]"
+                        : "aspect-[16/9]"
+                    }`}
+                  >
                     <Image
                       src={logo.src}
                       alt={logo.name}

@@ -32,7 +32,9 @@ export const MyFooter = () => {
           </Link>
         </nav>
         <div>
-          <p className="text-white text-sm">&copy; 2025 David Salazar</p>
+          <Link className=" text-white text-sm" href="/">
+            &copy; 2025 David Salazar
+          </Link>
         </div>
       </div>
     </footer>
