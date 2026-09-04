@@ -34,13 +34,15 @@ export default function Home() {
                 here.
               </Link>
             </p>
-            <a
-              href="#projects"
-              className=" absolute bottom-10 left-1/2 -translate-x-1/2 text-neutral-400 hover:text-white transition-colors animate-bounce"
-              aria-label="Scroll to projects"
-            >
-              <ChevronDown size={28} />
-            </a>
+            <div className="absolute bottom-10 inset-x-0 flex justify-center">
+              <a
+                href="#projects"
+                className=" absolute bottom-10 left-1/2 -translate-x-1/2 text-neutral-400 hover:text-white transition-colors animate-bounce"
+                aria-label="Scroll to projects"
+              >
+                <ChevronDown size={28} />
+              </a>
+            </div>
           </div>
         </section>
         <section
