@@ -139,18 +139,18 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
                   comparison of tail width.
                 </p>
                 <p className="text-neutral-300">
-                  At a 95% confidence level, SPY's daily losses are not expected
+                  At a 95% confidence level, SPY&apos;s daily losses are not expected
                   to exceed 1.93%. On days where losses breach that threshold,
                   the average loss (CVaR) is 3.20%.
                 </p>
                 <p className=" text-neutral-300">
-                  TSLA's 95% VaR is 6.28%, with an average tail loss (CVaR) of
-                  9.09% — more than 3x wider than SPY's band in absolute terms.
+                  TSLA&apos;s 95% VaR is 6.28%, with an average tail loss (CVaR) of
+                  9.09% — more than 3x wider than SPY&apos;s band in absolute terms.
                 </p>
                 <p className=" text-neutral-300">
                   Plotted on the same scale, the difference is visible directly:
-                  SPY's distribution clusters tightly near zero with a narrow
-                  VaR-CVaR band, while TSLA's is both wider overall and has a
+                  SPY&apos;s distribution clusters tightly near zero with a narrow
+                  VaR-CVaR band, while TSLA&apos;s is both wider overall and has a
                   substantially fatter left tail.
                 </p>
                 <p className=" text-neutral-300">
@@ -188,11 +188,11 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
                 </p>
 
                 <p className=" text-neutral-300">
-                  The portfolio's diversification benefit is visible in the
+                  The portfolio&apos;s diversification benefit is visible in the
                   correlation structure: TLT (bonds) is negatively correlated
-                  with SPY (-0.15), providing a partial hedge. TSLA's 0.50
+                  with SPY (-0.15), providing a partial hedge. TSLA&apos;s 0.50
                   correlation with SPY is notably higher than the other pairs,
-                  meaning its risk isn't as diversified away by the rest of the
+                  meaning its risk isn&apos;t as diversified away by the rest of the
                   portfolio as its individual volatility might suggest — a large
                   TSLA allocation and a large SPY allocation are more redundant
                   than they appear.

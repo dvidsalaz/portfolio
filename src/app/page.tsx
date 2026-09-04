@@ -21,7 +21,7 @@ export default function Home() {
               Hi, I&apos;m David.
             </h1>
             <p className=" text-neutral-300">
-              I'm a junior finance student focused on
+              I&apos;m a junior finance student focused on
               <span className=" text-red-300"> market risk</span> and
               <span className=" text-red-300"> quantitative </span>
               analysis, blending institutional data with applied statistics. Get
