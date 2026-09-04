@@ -55,8 +55,8 @@ export function VarCvarChart({
           <YAxis stroke="#a3a3a3" fontSize={12} />
           <Tooltip
             formatter={(value) => [value, "Frequency"]}
-            labelFormatter={(label: number) =>
-              `Return: ${(label * 100).toFixed(2)}%`
+            labelFormatter={(label) =>
+              `Return: ${(Number(label) * 100).toFixed(2)}%`
             }
             contentStyle={{ backgroundColor: "#1a1a1a", border: "none" }}
           />
