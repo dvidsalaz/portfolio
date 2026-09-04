@@ -110,7 +110,7 @@ export default function Home() {
             <p>
               view my projects
               <span className=" underline hover:text-orange-300 cursor-pointer">
-                <Link href="/projects">here</Link>
+                <Link href="/#projects">here</Link>
               </span>
             </p>
           </div>
