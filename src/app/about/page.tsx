@@ -92,8 +92,8 @@ export default function Home() {
                 <li>
                   <span className=" text-white font-medium">Free time</span>{" "}
                   {""}
-                  &mdash; On my free time I enjoy cooking, staying physically
-                  active, and doing front-end development work.
+                  &mdash; On my free time I enjoy rock climbing, collecting chef
+                  knifes, and watching GoT spin-off&apos;s.
                 </li>
                 <li>
                   <span className=" text-white font-medium">Rock Climbing</span>{" "}

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import ScrollObserver from "@/components/ui/scrollObserver";
 import MyNavigation from "@/components/custom/customNavigation";
+import { MyFooter } from "@/components/custom/customFooter";
 
 export default function Home() {
   return (
@@ -20,10 +21,11 @@ export default function Home() {
               Hi, I&apos;m David.
             </h1>
             <p className=" text-neutral-300">
-              I&apos;m a finance and data analytics student focused on{" "}
-              <span className=" text-red-300">financial analysis</span> and{" "}
-              <span className=" text-red-300">risk modeling</span>, blending
-              data science with applied statistics. Get to know me more {""}
+              I'm a junior finance student focused on
+              <span className=" text-red-300"> market risk</span> and
+              <span className=" text-red-300"> quantitative </span>
+              analysis, blending institutional data with applied statistics. Get
+              to know me more {""}
               <Link
                 className="mt-2 underline hover:text-orange-300 cursor-pointer"
                 href="/about"
@@ -93,9 +95,9 @@ export default function Home() {
                   </p>
                   <p className="font-medium">Portfolio Risk Engine</p>
                   <p className="text-neutral-300">
-                    A Python-based portfolio analytics engine that computes
-                    expected return, variance, standard deviation, covariance
-                    matrices.
+                    A Python-based risk engine computing VaR, CVaR, Sharpe
+                    ratio, beta, and stress-tested portfolio risk using
+                    institutional-grade LSEG data.
                   </p>
                   <Link
                     className="mt-2 underline cursor-pointer"
@@ -109,39 +111,7 @@ export default function Home() {
           </div>
         </section>
         <Separator className=" bg-modernGray"></Separator>
-        <footer className=" lg:px-32 flex flex-col md:flex-row gap-8 bg-bronzeOrange p-6 sm:p-10 lg:p-20 items-center text-center ">
-          <div className=" flex flex-col md:flex-row items-center gap-8 justify-between w-full text-sm">
-            <nav className="text-white flex gap-4 items-center ">
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="mailto:das240008@utdallas.edu"
-              >
-                Email
-              </Link>
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="https://www.linkedin.com/in/dvidsalaz/"
-              >
-                LinkedIn
-              </Link>
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="https://github.com/dvidsalaz"
-              >
-                Github
-              </Link>
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="/resume"
-              >
-                Resume
-              </Link>
-            </nav>
-            <div>
-              <p className="text-white text-sm">&copy; 2025 David Salazar</p>
-            </div>
-          </div>
-        </footer>
+        <MyFooter></MyFooter>
       </ScrollObserver>
     </main>
   );

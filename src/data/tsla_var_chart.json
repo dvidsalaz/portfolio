@@ -1,0 +1,207 @@
+{
+  "var": -0.06278915844454996,
+  "cvar": -0.09094437794125397,
+  "confidence_level": 0.95,
+  "bins": [
+    {
+      "return": -0.20633004227754997,
+      "frequency": 1
+    },
+    {
+      "return": -0.19773367244465,
+      "frequency": 0
+    },
+    {
+      "return": -0.18913730261175,
+      "frequency": 1
+    },
+    {
+      "return": -0.18054093277884997,
+      "frequency": 0
+    },
+    {
+      "return": -0.17194456294595,
+      "frequency": 1
+    },
+    {
+      "return": -0.16334819311305,
+      "frequency": 1
+    },
+    {
+      "return": -0.15475182328014997,
+      "frequency": 0
+    },
+    {
+      "return": -0.14615545344725,
+      "frequency": 0
+    },
+    {
+      "return": -0.13755908361435,
+      "frequency": 1
+    },
+    {
+      "return": -0.12896271378145,
+      "frequency": 1
+    },
+    {
+      "return": -0.12036634394855,
+      "frequency": 6
+    },
+    {
+      "return": -0.11176997411565,
+      "frequency": 2
+    },
+    {
+      "return": -0.10317360428275,
+      "frequency": 2
+    },
+    {
+      "return": -0.09457723444985,
+      "frequency": 5
+    },
+    {
+      "return": -0.08598086461695001,
+      "frequency": 11
+    },
+    {
+      "return": -0.07738449478405,
+      "frequency": 8
+    },
+    {
+      "return": -0.06878812495115001,
+      "frequency": 16
+    },
+    {
+      "return": -0.06019175511825002,
+      "frequency": 23
+    },
+    {
+      "return": -0.051595385285350015,
+      "frequency": 33
+    },
+    {
+      "return": -0.04299901545245001,
+      "frequency": 38
+    },
+    {
+      "return": -0.03440264561955002,
+      "frequency": 62
+    },
+    {
+      "return": -0.025806275786650013,
+      "frequency": 82
+    },
+    {
+      "return": -0.017209905953750007,
+      "frequency": 103
+    },
+    {
+      "return": -0.008613536120850016,
+      "frequency": 120
+    },
+    {
+      "return": -1.716628795002395e-05,
+      "frequency": 159
+    },
+    {
+      "return": 0.008579203544949968,
+      "frequency": 127
+    },
+    {
+      "return": 0.017175573377849973,
+      "frequency": 121
+    },
+    {
+      "return": 0.02577194321074998,
+      "frequency": 69
+    },
+    {
+      "return": 0.03436831304364997,
+      "frequency": 64
+    },
+    {
+      "return": 0.042964682876549976,
+      "frequency": 55
+    },
+    {
+      "return": 0.05156105270944997,
+      "frequency": 38
+    },
+    {
+      "return": 0.06015742254234996,
+      "frequency": 29
+    },
+    {
+      "return": 0.06875379237524998,
+      "frequency": 15
+    },
+    {
+      "return": 0.07735016220814997,
+      "frequency": 23
+    },
+    {
+      "return": 0.08594653204104996,
+      "frequency": 8
+    },
+    {
+      "return": 0.09454290187394995,
+      "frequency": 5
+    },
+    {
+      "return": 0.10313927170684994,
+      "frequency": 6
+    },
+    {
+      "return": 0.11173564153974996,
+      "frequency": 6
+    },
+    {
+      "return": 0.12033201137264996,
+      "frequency": 1
+    },
+    {
+      "return": 0.12892838120554995,
+      "frequency": 4
+    },
+    {
+      "return": 0.13752475103844997,
+      "frequency": 4
+    },
+    {
+      "return": 0.14612112087134996,
+      "frequency": 1
+    },
+    {
+      "return": 0.15471749070424995,
+      "frequency": 1
+    },
+    {
+      "return": 0.16331386053714997,
+      "frequency": 1
+    },
+    {
+      "return": 0.17191023037004996,
+      "frequency": 0
+    },
+    {
+      "return": 0.18050660020294995,
+      "frequency": 1
+    },
+    {
+      "return": 0.18910297003584994,
+      "frequency": 0
+    },
+    {
+      "return": 0.19769933986874993,
+      "frequency": 2
+    },
+    {
+      "return": 0.20629570970164995,
+      "frequency": 0
+    },
+    {
+      "return": 0.21489207953454997,
+      "frequency": 1
+    }
+  ]
+}

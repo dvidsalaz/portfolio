@@ -17,7 +17,7 @@ export default function Home() {
           <div className=" flex flex-col gap-6 p-6 sm:p-10 lg:p-20 min-h-screen ">
             <div className=" flex flex-col gap-3">
               <h1 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-4xl text-white">
-                Contact Information
+                contact information
               </h1>
             </div>
             <div className=" flex flex-col gap-3">

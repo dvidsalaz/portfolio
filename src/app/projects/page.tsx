@@ -21,19 +21,9 @@ export default function Home() {
           <MyNavigation></MyNavigation>
           <Separator className=" bg-modernGray "></Separator>
           <div className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-20 min-h-screen ">
-            <h1 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-xl text-white">
-              Hi, I&apos;m David. I&apos;m a finance & data analytics student.
+            <h1 className=" motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md text-3xl text-white">
+              Projects
             </h1>
-            <CodeBlock
-              lang="tsx"
-              title="HTML"
-              code={`<div className="bg-background text-foreground" />`}
-            />
-            <p className="">
-              The Sharpe Ratio is defined as{" "}
-              <Math latex="\frac{\mathbb{E}[R_p - R_f]}{\sigma(R_p - R_f)}" />{" "}
-              and measures excess return per unit of risk.
-            </p>
           </div>
         </section>
         <Separator className=" bg-modernGray"></Separator>
