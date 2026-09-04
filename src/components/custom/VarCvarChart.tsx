@@ -65,7 +65,6 @@ export function VarCvarChart({
             x2={data.var}
             fill="#f43f5e"
             fillOpacity={0.15}
-            isFront={true}
             ifOverflow="visible"
           />
           <Bar
