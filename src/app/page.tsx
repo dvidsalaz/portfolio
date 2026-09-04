@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import ScrollObserver from "@/components/ui/scrollObserver";
 import MyNavigation from "@/components/custom/customNavigation";
 import { MyFooter } from "@/components/custom/customFooter";
+import { ChevronDown } from "lucide-react";
 
 export default function Home() {
   return (
@@ -23,9 +24,9 @@ export default function Home() {
             <p className=" text-neutral-300">
               I&apos;m a junior finance student focused on
               <span className=" text-red-300"> market risk</span> and
-              <span className=" text-red-300"> quantitative </span>
-              analysis, blending institutional data with applied statistics. Get
-              to know me more {""}
+              <span className=" text-red-300"> risk analysis </span>, blending
+              institutional data with applied statistics. Get to know me more{" "}
+              {""}
               <Link
                 className="mt-2 underline hover:text-orange-300 cursor-pointer"
                 href="/about"
@@ -33,6 +34,13 @@ export default function Home() {
                 here.
               </Link>
             </p>
+            <a
+              href="#projects"
+              className=" absolute bottom-10 left-1/2 -translate-x-1/2 text-neutral-400 hover:text-white transition-colors animate-bounce"
+              aria-label="Scroll to projects"
+            >
+              <ChevronDown size={28} />
+            </a>
           </div>
         </section>
         <section
