@@ -88,7 +88,7 @@ export default function Home() {
             </div>
             <div
               id="card"
-              className=" rounded-t-3xl p-3 sm:p-4 lg:p-8 flex flex-col bg-wayneBlack text-white intersect-once intersect:motion-preset-slide-up motion-delay-100 flex-1  "
+              className=" rounded-t-3xl p-3 sm:p-4 lg:p-8 flex flex-col bg-wayneBlack text-white intersect-once intersect:motion-preset-slide-up motion-delay-150 flex-1  "
             >
               <div className=" flex flex-col gap-5 h-full">
                 <div className=" relative w-full h-96 overflow-hidden shrink-0">

@@ -108,7 +108,7 @@ export default function Home() {
               <CarouselPlugin></CarouselPlugin>
             </div>
             <p>
-              view my projects
+              view my projects&nbsp;
               <span className=" underline hover:text-orange-300 cursor-pointer">
                 <Link href="/#projects">here</Link>
               </span>
