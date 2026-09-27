@@ -74,8 +74,8 @@ export default function Home() {
                   </span>{" "}
                   &mdash; seeing them live was my first concert experience. My
                   favorite song is{" "}
-                  <span className=" italic ">
-                    &quot;We Are The People.&quot;
+                  <span className=" text-white italic ">
+                    &quot;Half Mast&quot;
                   </span>
                 </li>
                 <li>

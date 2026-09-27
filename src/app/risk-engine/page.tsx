@@ -12,6 +12,7 @@ import portfolioData from "@/data/portfolio_summary.json";
 import { VarCvarChart } from "@/components/custom/VarCvarChart";
 import spyData from "@/data/spy_var_chart.json";
 import tslaData from "@/data/tsla_var_chart.json";
+import { ChevronDown } from "lucide-react";
 
 import { CorrelationHeatmap } from "@/components/custom/CorrelationHeatMap";
 
@@ -39,6 +40,15 @@ export default function RiskEngine() {
               Conditional VaR (ES), correlation matrix, beta, and portfolio
               volatility using LSEG Enterprise Data.
             </p>
+            <div className="absolute bottom-10 inset-x-0 flex justify-center">
+              <a
+                href="#projects"
+                className=" absolute bottom-10 left-1/2 -translate-x-1/2 text-neutral-400 hover:text-white transition-colors animate-bounce"
+                aria-label="Scroll to projects"
+              >
+                <ChevronDown size={28} />
+              </a>
+            </div>
           </div>
         </section>
         <section
@@ -139,19 +149,20 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
                   comparison of tail width.
                 </p>
                 <p className="text-neutral-300">
-                  At a 95% confidence level, SPY&apos;s daily losses are not expected
-                  to exceed 1.93%. On days where losses breach that threshold,
-                  the average loss (CVaR) is 3.20%.
+                  At a 95% confidence level, SPY&apos;s daily losses are not
+                  expected to exceed 1.93%. On days where losses breach that
+                  threshold, the average loss (CVaR) is 3.20%.
                 </p>
                 <p className=" text-neutral-300">
-                  TSLA&apos;s 95% VaR is 6.28%, with an average tail loss (CVaR) of
-                  9.09% — more than 3x wider than SPY&apos;s band in absolute terms.
+                  TSLA&apos;s 95% VaR is 6.28%, with an average tail loss (CVaR)
+                  of 9.09% — more than 3x wider than SPY&apos;s band in absolute
+                  terms.
                 </p>
                 <p className=" text-neutral-300">
                   Plotted on the same scale, the difference is visible directly:
-                  SPY&apos;s distribution clusters tightly near zero with a narrow
-                  VaR-CVaR band, while TSLA&apos;s is both wider overall and has a
-                  substantially fatter left tail.
+                  SPY&apos;s distribution clusters tightly near zero with a
+                  narrow VaR-CVaR band, while TSLA&apos;s is both wider overall
+                  and has a substantially fatter left tail.
                 </p>
                 <p className=" text-neutral-300">
                   This illustrates a diversification effect concretely — SPY, as
@@ -192,10 +203,10 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
                   correlation structure: TLT (bonds) is negatively correlated
                   with SPY (-0.15), providing a partial hedge. TSLA&apos;s 0.50
                   correlation with SPY is notably higher than the other pairs,
-                  meaning its risk isn&apos;t as diversified away by the rest of the
-                  portfolio as its individual volatility might suggest — a large
-                  TSLA allocation and a large SPY allocation are more redundant
-                  than they appear.
+                  meaning its risk isn&apos;t as diversified away by the rest of
+                  the portfolio as its individual volatility might suggest — a
+                  large TSLA allocation and a large SPY allocation are more
+                  redundant than they appear.
                 </p>
               </div>
             </div>
