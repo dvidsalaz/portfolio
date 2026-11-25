@@ -37,8 +37,8 @@ export function FunctionCarousel() {
                     Historical VaR &mdash; Value at Risk
                   </p>
                   <p className="text-neutral-300">
-                    Estimates the maximum expected loss at a given confidence
-                    level
+                    Estimates a loss threshold that is exceeded with a specified
+                    probability over a defined time horizon.
                   </p>
                   <Math latex="\footnotesize \text{VaR}_\alpha = -Q_{1-\alpha}(R)" />
                 </div>
@@ -65,7 +65,7 @@ export function FunctionCarousel() {
                 </div>
                 <div className="flex flex-col gap-2 text-sm">
                   <p className="uppercase tracking-wide text-neutral-400">
-                    Expected Shortfall (ES)
+                    Estimated Shortfall (ES)
                   </p>
                   <p className="text-neutral-300">
                     Average of all returns that are worse than your VaR
