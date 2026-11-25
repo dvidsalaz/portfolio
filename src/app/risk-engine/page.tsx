@@ -172,6 +172,14 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
           <h2 className="  text-white text-3xl intersect:motion-preset-fade-lg">
             portfolio-level risk
           </h2>
+          <p className=" text-neutral-300">
+            This analysis uses an illustrative equal-weighted portfolio
+            consisting of SPY, TLT, GLD, and TSLA, each allocated 25% of
+            capital. Equal weighting provides a transparent baseline for
+            evaluating portfolio risk. The allocation is not optimized or
+            constructed using a risk-parity methodology.
+          </p>
+
           <PortfolioSummary data={portfolioData} />
           <div className=" flex flex-col lg:flex-row gap-8 intersect:motion-preset-fade-lg">
             <div className="flex flex-col gap-4 w-full lg:w-2/3">
@@ -194,14 +202,14 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
                 </p>
 
                 <p className=" text-neutral-300">
-                  The portfolio&apos;s diversification benefit is visible in the
-                  correlation structure: TLT (bonds) is negatively correlated
-                  with SPY (-0.15), providing a partial hedge. TSLA&apos;s 0.50
-                  correlation with SPY is notably higher than the other pairs,
-                  meaning its risk isn&apos;t as diversified away by the rest of
-                  the portfolio as its individual volatility might suggest — a
-                  large TSLA allocation and a large SPY allocation are more
-                  redundant than they appear.
+                  Over the 2020–2024 sample, SPY and TLT exhibited a weak
+                  negative correlation of −0.15, indicating limited inverse
+                  co-movement over the observed period. Meanwhile, TSLA and SPY
+                  exhibited a moderate positive correlation of 0.50, reflecting
+                  greater co-movement between the two equity exposures. These
+                  relationships influence portfolio risk, although correlations
+                  estimated over the full sample may not remain stable during
+                  periods of market stress.
                 </p>
               </div>
             </div>
