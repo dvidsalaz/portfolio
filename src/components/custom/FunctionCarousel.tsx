@@ -20,7 +20,7 @@ export function FunctionCarousel() {
           <div className="p-1 h-full">
             <Card className=" h-full flex flex-col border-none bg-wayneBlack text-white">
               <CardContent className="flex flex-col gap-5 p-4">
-                <div className="relative w-full h-80 overflow-hidden shrink-0">
+                <div className="relative w-full h-80 overflow-hidden overflow-y-auto shrink-0 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-neutral-600 [&::-webkit-scrollbar-thumb]:rounded-full">
                   <CodeBlock
                     lang="python"
                     title="risk_metrics.py"

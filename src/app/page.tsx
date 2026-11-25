@@ -24,7 +24,7 @@ export default function Home() {
             <p className=" text-neutral-300">
               I&apos;m a junior finance student focused on
               <span className=" text-red-300"> market risk</span> and
-              <span className=" text-red-300"> risk analysis </span>, blending
+              <span className=" text-red-300"> risk analysis</span>, blending
               institutional data with applied statistics. Get to know me more{" "}
               {""}
               <Link
@@ -107,8 +107,7 @@ export default function Home() {
                   <p className="font-medium">Portfolio Risk Engine</p>
                   <p className="text-neutral-300">
                     A Python-based risk engine computing VaR, CVaR, Sharpe
-                    ratio, beta, and stress-tested portfolio risk using
-                    institutional-grade LSEG data.
+                    ratio, beta, and portfolio volatility using LSEG data.
                   </p>
                   <Link
                     className="mt-2 underline cursor-pointer"

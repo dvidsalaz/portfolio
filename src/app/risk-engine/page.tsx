@@ -177,7 +177,9 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
             consisting of SPY, TLT, GLD, and TSLA, each allocated 25% of
             capital. Equal weighting provides a transparent baseline for
             evaluating portfolio risk. The allocation is not optimized or
-            constructed using a risk-parity methodology.
+            constructed using a risk-parity methodology. Despite its 25% capital
+            allocation, TSLA contributes approximately 73% of portfolio variance
+            over the 2020-2024 sample.
           </p>
 
           <PortfolioSummary data={portfolioData} />
