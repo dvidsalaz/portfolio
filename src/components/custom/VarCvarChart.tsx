@@ -77,7 +77,7 @@ export function VarCvarChart({
             stroke="#f43f5e"
             strokeWidth={2}
             label={{
-              value: `VaR: ${(data.var * 100).toFixed(2)}%`,
+              value: `VaR: ${(Math.abs(data.var) * 100).toFixed(2)}%`,
               position: "insideTopLeft",
               fill: "#f59e0b",
               fontSize: 12,
@@ -89,7 +89,7 @@ export function VarCvarChart({
             strokeDasharray="4 4"
             strokeWidth={2}
             label={{
-              value: `CVaR: ${(data.cvar * 100).toFixed(2)}%`,
+              value: `CVaR: ${(Math.abs(data.cvar) * 100).toFixed(2)}%`,
               position: "top",
               fill: "#14b8a6",
               fontSize: 12,

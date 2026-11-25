@@ -25,9 +25,11 @@ export function FunctionCarousel() {
                     lang="python"
                     title="risk_metrics.py"
                     code={`def hist_var(asset_returns, confidence_level=0.95):
-    assert 0 <= confidence_level <= 1, "confidence level is not between 0 and 1"
+    if not 0 < confidence_level < 1:
+        raise ValueError("Confidence level must be between 0 and 1.")
+
     var = asset_returns.quantile(1 - confidence_level)
-    return var`}
+    return -var`}
                   />
                 </div>
                 <div className="flex flex-col gap-2 text-sm">
@@ -53,15 +55,17 @@ export function FunctionCarousel() {
                     lang="python"
                     title="risk_metrics.py"
                     code={`def cvar(asset_returns, confidence_level=0.95):
-    assert 0 <= confidence_level <= 1, "confidence level is not between 0 and 1"
-    var_threshold = hist_var(asset_returns, confidence_level)
+    if not 0 < confidence_level < 1:
+        raise ValueError("Confidence level must be between 0 and 1.")
+
+    var_threshold = -hist_var(asset_returns, confidence_level)
     bad_returns = asset_returns[asset_returns < var_threshold]
-    return bad_returns.mean()`}
+    return -bad_returns.mean()`}
                   />
                 </div>
                 <div className="flex flex-col gap-2 text-sm">
                   <p className="uppercase tracking-wide text-neutral-400">
-                    Estimated Shortfall (ES)
+                    Expected Shortfall (ES)
                   </p>
                   <p className="text-neutral-300">
                     Average of all returns that are worse than your VaR

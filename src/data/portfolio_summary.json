@@ -1,18 +1,13 @@
 {
-  "tickers": [
-    "SPY",
-    "TLT.O",
-    "GLD",
-    "TSLA.O"
-  ],
+  "tickers": ["SPY", "TLT.O", "GLD", "TSLA.O"],
   "weights": {
     "SPY": 0.25,
     "TLT.O": 0.25,
     "GLD": 0.25,
     "TSLA.O": 0.25
   },
-  "portfolio_var": -0.020407064090274995,
-  "portfolio_cvar": -0.029685349873972224,
+  "portfolio_var": 0.020407064090274995,
+  "portfolio_cvar": 0.029685349873972224,
   "portfolio_volatility": 0.2125984759014043,
   "portfolio_expected_return": 0.24734029825642606,
   "confidence_level": 0.95,

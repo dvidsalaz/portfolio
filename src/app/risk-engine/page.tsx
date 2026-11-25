@@ -88,14 +88,15 @@ export default function RiskEngine() {
                   <div className="relative w-full h-80 overflow-y-auto shrink-0 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-neutral-600 [&::-webkit-scrollbar-thumb]:rounded-full">
                     <CodeBlock
                       lang="python"
-                      title="risk_metrics.py"
+                      title="data_loader.py"
                       code={`import pandas as pd
-import lseg.data as ld
 
 def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='data/sample_returns.csv'):
     if use_cache:
         return pd.read_csv(cache_path, index_col=0, parse_dates=True)
 
+    import lseg.data as ld
+    
     df = ld.get_data(
         universe=tickers,
         fields=['TR.TotalReturn.date', 'TR.TotalReturn'],
@@ -149,25 +150,19 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
                   comparison of tail width.
                 </p>
                 <p className="text-neutral-300">
-                  At a 95% confidence level, SPY&apos;s daily losses are not
-                  expected to exceed 1.93%. On days where losses breach that
-                  threshold, the average loss (CVaR) is 3.20%.
+                  Using historical simulation over 1,258 trading days
+                  (2020—2024), SPY&apos;s 95% one-day VaR was 1.92%.
+                  Approximately 5% of historical observations exceeded this loss
+                  threshold, with an average loss of 3.19% among those
+                  observations (Expected Shortfall).
                 </p>
                 <p className=" text-neutral-300">
-                  TSLA&apos;s 95% VaR is 6.28%, with an average tail loss (CVaR)
-                  of 9.09% — more than 3x wider than SPY&apos;s band in absolute
-                  terms.
-                </p>
-                <p className=" text-neutral-300">
-                  Plotted on the same scale, the difference is visible directly:
-                  SPY&apos;s distribution clusters tightly near zero with a
-                  narrow VaR-CVaR band, while TSLA&apos;s is both wider overall
-                  and has a substantially fatter left tail.
-                </p>
-                <p className=" text-neutral-300">
-                  This illustrates a diversification effect concretely — SPY, as
-                  a diversified index, absorbs idiosyncratic shocks that a
-                  single volatile equity like TSLA does not.
+                  Historical simulation reveals substantially greater downside
+                  risk for TSLA than SPY over the 2020—2024 sample. At the 95%
+                  confidence level, TSLA&apos;s one-day VaR was 6.28%, compared
+                  with 1.92% for SPY. Expected Shortfall was 9.09% for TSLA and
+                  3.19% for SPY, demonstrating greater absolute tail-loss
+                  severity for TSLA during the observed period.
                 </p>
               </div>
             </div>
@@ -213,17 +208,18 @@ def get_market_data(tickers, start_date, end_date, use_cache=False, cache_path='
           </div>
           <div className="flex flex-col gap-3 p-6 border-l-4 border-orange-400 bg-wayneBlack">
             <p className="uppercase tracking-wide text-sm text-orange-400">
-              Limitation
+              Limitation — Historical Dependence
             </p>
             <p className="text-neutral-300">
-              This implementation uses static (unconditional) correlation,
-              computed over the full sample period. During market stress,
-              correlations tend to spike toward 1 — assets that normally move
-              independently start moving together. Because static correlation
-              averages across calm and turbulent periods alike, it understates
-              tail risk during crises. A more accurate approach would use
-              Dynamic Conditional Correlation (DCC) or rolling-window
-              correlation to capture how relationships shift under stress.
+              Portfolio volatility is calculated using a covariance matrix
+              estimated over the full sample period. This approach may not
+              accurately represent changing relationships between assets during
+              periods of market stress. Historical VaR and Expected Shortfall
+              instead use realized portfolio returns, preserving the asset
+              relationships observed within the selected historical window.
+              However, these estimates remain limited by the market conditions
+              represented in that window and may not capture crises or
+              dependence structures absent from the sample.
             </p>
           </div>
           <div>
