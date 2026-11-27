@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
@@ -6,6 +8,12 @@ import { CarouselPlugin } from "@/components/custom/CarouselPlugin";
 import { CarouselContent } from "@/components/ui/carousel";
 import MyNavigation from "@/components/custom/customNavigation";
 import { MyFooter } from "@/components/custom/customFooter";
+
+export const metadata: Metadata = {
+  title: "About | David Salazar",
+  description:
+    "Finance student at UT Dallas focused on market risk. Python, SQL and applied statistics for returns, volatility and decisions under uncertainty.",
+};
 
 export default function Home() {
   return (
@@ -94,7 +102,7 @@ export default function Home() {
                   <span className=" text-white font-medium">Free time</span>{" "}
                   {""}
                   &mdash; On my free time I enjoy rock climbing, collecting chef
-                  knifes, and watching GoT spin-off&apos;s.
+                  knives, and watching GoT spin-offs.
                 </li>
                 <li>
                   <span className=" text-white font-medium">Rock Climbing</span>{" "}

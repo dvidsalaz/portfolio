@@ -42,7 +42,7 @@ const MyNavigation = () => {
 
       {/* Mobile dropdown */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full flex flex-col gap-4 bg-wayneBlack text-white p-6 sm:hidden z-50">
+        <div className="absolute top-full left-0 w-full flex flex-col gap-4 bg-wayneBlack text-white p-6 sm:hidden z-50 border-b border-modernGray shadow-lg">
           {links.map((link) => (
             <Link
               key={link.href}

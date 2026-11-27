@@ -25,11 +25,10 @@ export default function Home() {
               I&apos;m a junior finance student focused on
               <span className=" text-red-300"> market risk</span> and
               <span className=" text-red-300"> risk analysis</span>, blending
-              institutional data with applied statistics. Get to know me more{" "}
-              {""}
+              institutional data with applied statistics. See my projects {""}
               <Link
                 className="mt-2 underline hover:text-orange-300 cursor-pointer"
-                href="/about"
+                href="#projects"
               >
                 here.
               </Link>

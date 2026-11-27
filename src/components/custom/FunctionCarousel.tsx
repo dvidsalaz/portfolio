@@ -20,7 +20,7 @@ export function FunctionCarousel() {
           <div className="p-1 h-full">
             <Card className=" h-full flex flex-col border-none bg-wayneBlack text-white">
               <CardContent className="flex flex-col gap-5 p-4">
-                <div className="relative w-full h-80 overflow-hidden overflow-y-auto shrink-0 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-neutral-600 [&::-webkit-scrollbar-thumb]:rounded-full">
+                <div className="relative w-full h-80 overflow-hidden shrink-0 ">
                   <CodeBlock
                     lang="python"
                     title="risk_metrics.py"
@@ -65,7 +65,7 @@ export function FunctionCarousel() {
                 </div>
                 <div className="flex flex-col gap-2 text-sm">
                   <p className="uppercase tracking-wide text-neutral-400">
-                    Estimated Shortfall (ES)
+                    Expected Shortfall (ES)
                   </p>
                   <p className="text-neutral-300">
                     Average of all returns that are worse than your VaR

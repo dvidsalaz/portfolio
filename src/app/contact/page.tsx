@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
+
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import ScrollObserver from "@/components/ui/scrollObserver";
 import MyNavigation from "@/components/custom/customNavigation";
+
+export const metadata: Metadata = {
+  title: "Contact | David Salazar",
+  description:
+    "Contact David Salazar, finance student at UT Dallas seeking market risk internships, by email or LinkedIn.",
+};
 
 export default function Home() {
   return (

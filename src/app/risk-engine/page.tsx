@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/ui/CodeBlock";
 import { Math } from "@/components/math";
 
@@ -18,6 +20,12 @@ import { CorrelationHeatmap } from "@/components/custom/CorrelationHeatMap";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { MyFooter } from "@/components/custom/customFooter";
+
+export const metadata: Metadata = {
+  title: "Portfolio Risk Engine | David Salazar",
+  description:
+    "Python risk engine computing historical VaR, CVaR, beta and portfolio volatility from LSEG data, with SPY vs. TSLA tail-risk analysis.",
+};
 
 export default function RiskEngine() {
   return (
