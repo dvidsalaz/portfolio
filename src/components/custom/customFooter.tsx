@@ -33,7 +33,7 @@ export const MyFooter = () => {
         </nav>
         <div>
           <Link className=" text-white text-sm" href="/">
-            &copy; 2025 David Salazar
+            &copy; 2026 David Salazar
           </Link>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function Home() {
               I&apos;m a junior finance student focused on
               <span className=" text-red-300"> market risk</span> and
               <span className=" text-red-300"> risk analysis</span>, blending
-              institutional data with applied statistics. See my projects {""}
+              institutional data with applied statistics. View my projects {""}
               <Link
                 className="mt-2 underline hover:text-orange-300 cursor-pointer"
                 href="#projects"
